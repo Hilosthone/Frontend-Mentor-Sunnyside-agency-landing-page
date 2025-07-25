@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <style>
+    .attribution { font-size: 11px; text-align: center; padding: 1rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+   <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              softRed: 'hsl(7, 99%, 70%)',
+              yellow: 'hsl(51, 100%, 49%)',
+              darkDesaturatedCyan: 'hsl(167, 40%, 24%)',
+              darkBlue: 'hsl(198, 62%, 26%)',
+              darkModerateCyan: 'hsl(168, 34%, 41%)',
+            },
+            fontFamily: {
+              barlow: ['Barlow', 'sans-serif'],
+              fraunces: ['Fraunces', 'serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-barlow text-[18px] text-gray-700">
+
+    <!-- Header -->
+    <header class="bg-[url('./images/desktop/image-header.jpg')] bg-no-repeat bg-cover bg-center min-h-screen text-white">
+      <nav class="flex justify-between items-center px-6 md:px-16 py-8 relative">
+  <h1 class="text-3xl font-fraunces font-bold">sunnyside</h1>
+
+  <!-- Desktop Menu -->
+  <ul class="hidden md:flex gap-8">
+    <li><a href="#" class="hover:underline">About</a></li>
+    <li><a href="#" class="hover:underline">Services</a></li>
+    <li><a href="#" class="hover:underline">Projects</a></li>
+    <li>
+      <a
+        href="#"
+        class="bg-white text-black px-6 py-2 rounded-full font-fraunces uppercase text-sm tracking-wide"
+        >Contact</a>
+    </li>
+  </ul>
+
+  <!-- Hamburger Icon -->                                    
+  <div id="hamburger" class="md:hidden cursor-pointer z-50">
+    <img src="./images/icon-hamburger.svg" alt="menu" />
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul
+    id="mobileMenu"
+    class="hidden flex-col gap-6 absolute top-20 left-6 right-6 bg-white text-black p-6 text-center shadow-lg z-40 md:hidden"
+  >
+    <li><a href="#" class="hover:underline">About</a></li>
+    <li><a href="#" class="hover:underline">Services</a></li>
+    <li><a href="#" class="hover:underline">Projects</a></li>
+    <li>
+      <a
+        href="#"
+        class="bg-yellow text-white px-6 py-2 rounded-full font-fraunces uppercase text-sm tracking-wide"
+        >Contact</a>
+    </li>
+  </ul>
+    </nav>
+    <div class="flex flex-col items-center justify-center text-center pt-24">
+        <h2 class="text-4xl md:text-5xl font-fraunces uppercase tracking-[.3em]">
+          We are creatives
+        </h2>
+        <img src="./images/icon-arrow-down.svg" class="mt-10 animate-bounce" alt="arrow down" />
+    </div>
+
+    </header>
+
+    <!-- Transform Your Brand -->
+    <section class="md:grid md:grid-cols-2">
+      <div class="p-8 md:p-16 flex flex-col justify-center gap-6 text-center md:text-left">
+        <h3 class="font-fraunces text-3xl md:text-4xl font-black">
+          Transform your brand
+        </h3>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#" class="font-fraunces uppercase text-sm text-black border-b-4 border-yellow w-fit">
+          Learn more
+        </a>
+      </div>
+      <div>
+        <img src="./images/desktop/image-transform.jpg" class="w-full" alt="Transform" />
+      </div>
+    </section>
+
+    <!-- Stand out to the right audience -->
+    <section class="md:grid md:grid-cols-2">
+      <div>
+        <img src="./images/desktop/image-stand-out.jpg" class="w-full" alt="Stand out" />
+      </div>
+      <div class="p-8 md:p-16 flex flex-col justify-center gap-6 text-center md:text-left">
+        <h3 class="font-fraunces text-3xl md:text-4xl font-black">
+          Stand out to the right audience
+        </h3>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+          we’ll build and extend your brand in digital places.
+        </p>
+        <a href="#" class="font-fraunces uppercase text-sm text-black border-b-4 border-softRed w-fit">
+          Learn more
+        </a>
+      </div>
+    </section>
+
+    <!-- Graphic Design & Photography -->
+    <section class="grid md:grid-cols-2 text-center">
+      <div class="relative text-darkDesaturatedCyan bg-cover bg-no-repeat bg-center h-[500px] flex items-end justify-center" style="background-image: url('./images/desktop/image-graphic-design.jpg');">
+        <div class="p-8 max-w-xs">
+          <h3 class="font-fraunces text-2xl font-bold">Graphic Design</h3>
+          <p class="text-sm mt-4">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </div>
+      <div class="relative text-darkBlue bg-cover bg-no-repeat bg-center h-[500px] flex items-end justify-center" style="background-image: url('./images/desktop/image-photography.jpg');">
+        <div class="p-8 max-w-xs">
+          <h3 class="font-fraunces text-2xl font-bold">Photography</h3>
+          <p class="text-sm mt-4">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 text-center">
+      <h4 class="font-fraunces text-gray-400 uppercase tracking-widest mb-12">Client testimonials</h4>
+      <div class="grid md:grid-cols-3 gap-10 px-8 md:px-16">
+        <!-- Testimonial 1 -->
+        <div>
+          <img src="./images/image-emily.jpg" class="mx-auto rounded-full w-16 mb-6" />
+          <p class="mb-6">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h5 class="font-fraunces font-bold">Emily R.</h5>
+          <span class="text-sm text-gray-500">Marketing Director</span>
+        </div>
+        <!-- Testimonial 2 -->
+        <div>
+          <img src="./images/image-thomas.jpg" class="mx-auto rounded-full w-16 mb-6" />
+          <p class="mb-6">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h5 class="font-fraunces font-bold">Thomas S.</h5>
+          <span class="text-sm text-gray-500">Chief Operating Officer</span>
+        </div>
+        <!-- Testimonial 3 -->
+        <div>
+          <img src="./images/image-jennie.jpg" class="mx-auto rounded-full w-16 mb-6" />
+          <p class="mb-6">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h5 class="font-fraunces font-bold">Jennie F.</h5>
+          <span class="text-sm text-gray-500">Business Owner</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="grid grid-cols-2 md:grid-cols-4">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" class="w-full" />
+      <img src="./images/desktop/image-gallery-orange.jpg" class="w-full" />
+      <img src="./images/desktop/image-gallery-cone.jpg" class="w-full" />
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" class="w-full" />
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkModerateCyan text-white py-16 text-center">
+      <h2 class="text-2xl font-bold mb-6">sunnyside</h2>
+      <ul class="flex justify-center gap-8 mb-6 text-lg">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+        <li><a href="#" class="hover:underline">Projects</a></li>
+      </ul>
+      <div class="flex justify-center gap-6">
+        <img src="./images/icon-facebook.svg" alt="Facebook" />
+        <img src="./images/icon-instagram.svg" alt="Instagram" />
+        <img src="./images/icon-twitter.svg" alt="Twitter" />
+        <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+      </div>
+
+      <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Hilosthone">Hilosthone</a>.
+  </div>
+    </footer>
+
+    <script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+  </body>
+</html>
